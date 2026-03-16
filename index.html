@@ -1,1 +1,132 @@
-<img src="https://uploads.onecompiler.io/44gh9p8th/44gh9nw3g/1000055661.jpg" />
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parent Teacher Meeting Scheduler</title>
+
+<style>
+#mainPage{
+display:none;
+}
+</style>
+
+<script>   
+function loginUser(){
+alert("Logged in successfully");
+document.getElementById("loginPage").style.display="none";
+document.getElementById("mainPage").style.display="block";
+}
+
+function submitFeedback(){
+alert("Feedback submitted successfully");
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="loginPage">
+
+<h2>User Login</h2>
+
+<form>
+
+Username:
+<input type="text" required>
+<br><br>
+
+Password:
+<input type="password" required>
+<br><br>
+
+Role:
+<select>
+<option>Parent</option>
+<option>Teacher</option>
+</select>
+
+<br><br>
+
+<button type="button" onclick="loginUser()">Login</button>
+
+</form>
+
+</div>
+
+
+<div id="mainPage">
+
+<h2>Available Meeting Slots</h2>
+
+<table border="1">
+
+<tr>
+<th>Date</th>
+<th>Time</th>
+<th>Teacher</th>
+</tr>
+
+<tr>
+<td>20 March</td>
+<td>10:00 AM</td>
+<td>Math Teacher</td>
+</tr>
+
+<tr>
+<td>20 March</td>
+<td>11:00 AM</td>
+<td>Science Teacher</td>
+</tr>
+
+<tr>
+<td>21 March</td>
+<td>9:30 AM</td>
+<td>English Teacher</td>
+</tr>
+
+</table>
+
+<br><br>
+
+<h2>Feedback Form</h2>
+
+<form onsubmit="submitFeedback()">
+
+Communication:
+<select>
+<option>Excellent</option>
+<option>Good</option>
+<option>Average</option>
+</select>
+
+
+<br>Organization:
+<select>
+<option>Excellent</option>
+<option>Good</option>
+<option>Average</option>
+</select>
+
+<br><br>
+
+Overall Experience:
+<select>
+<option>Excellent</option>
+<option>Good</option>
+<option>Average</option>
+</select>
+
+<br><br>
+
+<textarea placeholder="Additional Comments"></textarea>
+
+<br><br>
+
+<input type="submit" value="Submit Feedback">
+
+</form>
+
+</div>
+
+</body>
+</html>
