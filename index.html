@@ -1,111 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Parent Teacher Meeting Scheduler</title>
-
-<style>
-#mainPage{
-display:none;
-}
-</style>
-
-<script>   
-function loginUser(){
-alert("Logged in successfully");
-document.getElementById("loginPage").style.display="none";
-document.getElementById("mainPage").style.display="block";
-}
-
-function submitFeedback(){
-alert("Feedback submitted successfully");
-}
-</script>
-
+  <title>Sharan Study Hub</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+    }
+    a {
+      display: block;
+      margin: 15px 0;
+      padding: 12px;
+      background: #1f1f1f;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+    }
+    a:hover {
+      background: #333;
+    }
+  </style>
 </head>
 
 <body>
 
-<div id="loginPage">
+<h1>Sharan Study Hub</h1>
+<p style="text-align:center;">No bullshit. Just notes.</p>
 
-<h2>User Login</h2>
+<h2>📘 Semester 3 (2026)</h2>
+<p style="text-align:center;">Coming soon...</p>
 
-<form>
+<h2>📘 Semester 4 (2026)</h2>
 
-Username:
-<input type="text" required>
-<br><br>
+<a href="sem4-2026/lesson-plan/index.html">
+  📂 Open Lesson Plans
+</a>
 
-Password:
-<input type="password" required>
-<br><br>
-
-Role:
-<select>
-<option>Parent</option>
-<option>Teacher</option>
-</select>
-
-<br><br>
-
-<button type="button" onclick="loginUser()">Login</button>
-
-</form>
-
-</div>
-
-
-<div id="mainPage">
-
-<h2>Available Meeting Slots</h2>
-
-<table border="1">
-
-<tr>
-<th>Date</th>
-<th>Time</th>
-<th>Teacher</th>
-</tr>
-
-<tr>
-<td>20 March</td>
-<td>10:00 AM</td>
-<td>Math Teacher</td>
-</tr>
-
-<tr>
-<td>20 March</td>
-<td>11:00 AM</td>
-<td>Science Teacher</td>
-</tr>
-
-<tr>
-<td>21 March</td>
-<td>9:30 AM</td>
-<td>English Teacher</td>
-</tr>
-
-</table>
-
-<br><br>
-
-<h2>Feedback Form</h2>
-
-<form onsubmit="submitFeedback()">
-
-Communication:
-<select>
-<option>Excellent</option>
-<option>Good</option>
-<option>Average</option>
-</select>
-
-
-<br>Organization:
-<select>
-<option>Excellent</option>
-<option>Good</option>
-<option>Average</option>
-</select>
+</body>
+</html></select>
 
 <br><br>
 
